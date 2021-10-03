@@ -16,12 +16,12 @@ public class parenthesis_checker {
             switch (ch) {
                 case ')':
                     top = st.pop();
-                    if (top == ']' || top == '}')
+                    if (top == '[' || top == '{')
                         return false;
                     break;
                 case ']':
                     top = st.pop();
-                    if (top == '}' || top == ')')
+                    if (top == '{' || top == '(')
                         return false;
                     break;
                 case '}':
